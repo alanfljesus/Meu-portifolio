@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%
+}
+
+body {
+    height: 100vh;
+    background-color: #22212C;
+    color: #837E9F;
+    font-size: 1.6rem;
+    padding: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 348px 900px;
+    grid-template-rows: 1fr 348px 208px 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 20px 15px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "profile projects"
+        "links ."
+        "tecnologias ."
+        "experiencias ."
+        "educacao .";
+}
+
+.profile {
+    grid-area: profile;
+}
+
+.links {
+    grid-area: links;
+}
+
+.tecnologias {
+    grid-area: tecnologias;
+}
+
+.experiencias {
+    grid-area: experiencias;
+}
+
+.educacao {
+    grid-area: educacao;
+}
+
+.projects {
+    grid-area: projects;
+}
+
+
+.container .profile {
+    background: #302F3D;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.container .profile img {
+    border-radius: 100%;
+    width: 128px;
+    height: 128px;
+    border: 2px solid #00FF00;
+}
+
+.container .profile h1 {
+    font-family: 'Merriweather Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.9rem;
+}
+
+.container .profile p {
+    font-family: 'Merriweather Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+}
+
+.container .links {
+    padding: 40px;
+
+    background: #302F3D;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+
+.container .links p {
+    font-family: 'Merriweather Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 5rem;
+    color: #837E9F;
+}
+
+.container .tecnologias {
+    background: #302F3D;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+
+    padding: 15px;
+}
+
+.container .tecnologias h3 {
+    font-family: 'Merriweather Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    text-align: center;
+}
+
+.container .tecnologias p {
+    font-family: 'Merriweather Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.3rem;
+    text-align: center;
+    color: #000;
+
+    background: #CB92B1;
+    border-radius: 30px;
+    width: 86px;
+    height: 24px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 25%;
+    flex-grow: 1;
+}
+
+.container .tecnologias2 {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    column-gap: 15px;
+
+    margin: 20px;
+}
+
+.container .experiencias {
+    background: #302F3D;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+
+    padding: 15px;
+}
+
+.container .experiencias h3 {
+    font-family: 'Merriweather Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.5rem;
+
+    text-align: center;
+}
+
+.container .educacao {
+    background: #302F3D;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+
+    padding: 15px;
+}
+
+.container .educacao h3 {
+    font-family: 'Merriweather Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.5rem;
+
+    text-align: center;
+}
+
+.container .formacoes {
+    font-family: 'Merriweather Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+
+    color: #837E9F;
+}
+
+.container .projects {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+    background: #302F3D;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 650px) {
+    .container {
+        display: grid;
+        grid-template-columns: 348px;
+        grid-template-rows: 1fr 348px 208px 1fr 1fr 1fr;
+        grid-auto-columns: 1fr;
+        gap: 20px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "profile"
+            "links ."
+            "tecnologias ."
+            "experiencias ."
+            "educacao ."
+            "projects .";
+    }
+
+    .profile {
+        grid-area: profile;
+    }
+
+    .links {
+        grid-area: links;
+    }
+
+    .tecnologias {
+        grid-area: tecnologias;
+    }
+
+    .experiencias {
+        grid-area: experiencias;
+    }
+
+    .educacao {
+        grid-area: educacao;
+    }
+
+    .projects {
+        grid-area: projects;
+    }
+
+    .container .projects {
+        position: relative;
+    }
+
+}
+
