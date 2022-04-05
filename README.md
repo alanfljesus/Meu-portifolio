@@ -6,4 +6,5 @@
 
 ### Portifólio criado implementando Grid e Flexbox para maior aprendizado e buscando entender sobre a responsividade.
 
-##### LINK: <a>meu-p0rtifolio.netlify.app</a>
+<a href="https://meu-p0rtifolio.netlify.app" target="_blank">LINK Portifólio</a>
+
