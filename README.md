@@ -1,3 +1,3 @@
 # Portifólio
 
-### Criando meu portifólio implementando Grid e FlexBox
+### Criando meu portifólio implementando para o aprendizado de Grid e FlexBox
